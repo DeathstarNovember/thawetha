@@ -24,7 +24,7 @@ const localeTn: WeatherLocale = {
 const forecastUnitOptions = ['imperial', 'metric', 'standard']
 
 const App = () => {
-  const [weather, setWeather] = useState<WeatherData | undefined>(sampleWeather)
+  const [weather, setWeather] = useState<WeatherData | undefined>(undefined)
 
   const [error, setError] = useState<WeatherError | undefined>(undefined)
 
