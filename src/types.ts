@@ -55,7 +55,7 @@ type FeelsLike = {
   morn: number
 }
 
-type DailyForecast = {
+export type DailyForecast = {
   dt: number
   sunrise: number
   sunset: number
