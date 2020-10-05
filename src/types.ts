@@ -1,11 +1,17 @@
-type Forecast = {
+export type Forecast = {
   id: number
   main: string
   description: string
   icon: string
 }
 
-type CurrentWeather = {
+export enum ForecastUnit {
+  imperial = 'imperial',
+  metric = 'metric',
+  standard = 'standard',
+}
+
+export type CurrentWeather = {
   dt: number
   sunrise: number
   sunset: number
@@ -22,9 +28,9 @@ type CurrentWeather = {
   weather: Forecast[]
 }
 
-type MinutelyForecast = { dt: number; precipitation: number }
+export type MinutelyForecast = { dt: number; precipitation: number }
 
-type HourlyForecast = {
+export type HourlyForecast = {
   dt: number
   temp: number
   feels_like: number
@@ -39,7 +45,7 @@ type HourlyForecast = {
   pop: number
 }
 
-type Temp = {
+export type Temp = {
   day: number
   min: number
   max: number
@@ -48,7 +54,7 @@ type Temp = {
   morn: number
 }
 
-type FeelsLike = {
+export type FeelsLike = {
   day: number
   night: number
   eve: number
