@@ -5,9 +5,9 @@ export const Layout: React.FC = ({ children }) => {
   return (
     <div
       style={{
+        ...theme.baseText,
         display: 'flex',
         backgroundImage: `linear-gradient(to top, ${theme.colors.secondary} 0%, ${theme.colors.primary} 100%)`,
-        color: theme.colors.primaryText,
         minHeight: '100vh',
         padding: '10px',
         justifyContent: 'center',

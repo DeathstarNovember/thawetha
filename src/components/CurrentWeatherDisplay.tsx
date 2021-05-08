@@ -27,7 +27,7 @@ export const CurrentWeatherDisplay: React.FC<CurrentWeatherProps> = ({
   const panelStyles = getBasePanelStyle(true, true)
   return (
     <div>
-      <h1>
+      <h1 style={theme.baseText}>
         {locale.name}{' '}
         {new Date(currentWeather.dt * 1000)
           .toLocaleTimeString([], {

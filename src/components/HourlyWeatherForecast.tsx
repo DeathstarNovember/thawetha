@@ -35,7 +35,7 @@ export const HourlyWeatherForcast = ({
   const weatherGroupsDay2 = getWeatherGroups(weather.slice(24))
   return (
     <div>
-      <h3>Next 24 Hours</h3>
+      <h3 style={theme.baseText}>Next 24 Hours</h3>
       <div
         style={{
           display: 'flex',
@@ -50,7 +50,7 @@ export const HourlyWeatherForcast = ({
           />
         ))}
       </div>
-      <h3>Next 48 Hours</h3>
+      <h3 style={theme.baseText}>Next 48 Hours</h3>
       <div
         style={{
           display: 'flex',
@@ -151,7 +151,7 @@ export const HourlyWeatherTile = ({
       <div>
         <img src={iconURL} />
       </div>
-      <div>
+      <div style={{ mixBlendMode: 'difference' }}>
         <div
           style={{
             display: 'flex',

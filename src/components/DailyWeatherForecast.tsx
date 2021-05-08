@@ -56,13 +56,19 @@ export const DailyWeatherTile = ({
       onClick={toggleSelected}
       style={{ ...panelStyle }}
     >
-      <div style={{ fontWeight: 'bold', marginBottom: 6 }}>
+      <div
+        style={{
+          fontWeight: 'bold',
+          marginBottom: 6,
+          mixBlendMode: 'difference',
+        }}
+      >
         {new Date(weather.dt * 1000).toDateString()}
       </div>
 
       <div>
         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-          <div>
+          <div style={{ mixBlendMode: 'difference' }}>
             <div style={{ marginBottom: 6 }}>
               <div>
                 {temp.max.toFixed(1)}
@@ -87,9 +93,6 @@ export const DailyWeatherTile = ({
           display: 'flex',
           alignItems: 'flex-end',
           flex: 1,
-          color: selected
-            ? theme.colors.secondaryText
-            : theme.colors.primaryText,
         }}
       >
         <TempBar temp={temp.morn} heightScale={1} />

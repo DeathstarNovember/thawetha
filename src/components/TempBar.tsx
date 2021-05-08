@@ -27,7 +27,7 @@ export const TempBar = ({
         margin: '0 7px',
       }}
     >
-      <div style={{ marginTop: '-1em' }}>
+      <div style={{ marginTop: '-1em', mixBlendMode: 'difference' }}>
         {temp.toFixed(0)}
         {unitSymbol}
       </div>
