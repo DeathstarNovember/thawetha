@@ -86,7 +86,7 @@ const App = () => {
         <Layout>
           <ButtonGroup variant="transparent">
             <Button onClick={changeLocale} variant="accent">
-              change locale
+              change location
             </Button>
             <Button onClick={changeUnits} variant="primary">
               change units
