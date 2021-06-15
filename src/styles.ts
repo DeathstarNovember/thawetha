@@ -2,7 +2,7 @@ export const dropShadow = `0 2px 3px 1px rgba(0, 0, 0, 0.4), 2px 3px 5px rgba(0,
 
 export const theme = {
   colors: {
-    primary: '#00c6fb',
+    primary: '#585858',
     secondary: '#005bea',
     accent: '#EC6E4D',
   },
